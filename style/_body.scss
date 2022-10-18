@@ -14,11 +14,12 @@ body{
     position: absolute;
     bottom: 0;
     right: 0;
-    width: 50%;
+    width: 70%;
     -moz-transform: scale(-1, -1);
     -o-transform: scale(-1, -1);
     -webkit-transform: scale(-1, -1);
     transform: scale(-1, -1);
+    z-index: -1;
 }
 
 .left-top img, .right-bottom img{

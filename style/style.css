@@ -68,8 +68,9 @@ body {
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 50%;
+  width: 70%;
   transform: scale(-1, -1);
+  z-index: -1;
 }
 
 .left-top img, .right-bottom img {
@@ -89,7 +90,7 @@ body {
   position: relative;
   flex-direction: column;
   align-items: center;
-  width: 1250px;
+  width: 1150px;
   font: 15px "League Spartan", sans-serif;
   margin-top: 11rem;
 }
@@ -111,27 +112,26 @@ body {
 .header-right-panel {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
 }
 .header-right-panel .secound {
-  margin-left: 2rem;
+  margin-left: 2.5rem;
 }
 .header-right-panel .thrid {
   margin-left: 5rem;
 }
 
 .header-left-panel-title {
-  font-size: 3.85rem;
+  font-size: 3.5rem;
   font-weight: 700;
   max-width: 70%;
 }
 
 .header-left-panel-description {
-  margin-top: 2rem;
-  font-size: 1.3rem;
+  margin-top: 1.8rem;
+  font-size: 1.2rem;
   font-weight: 500;
   max-width: 80%;
-  line-height: 1.8rem;
+  line-height: 1.5rem;
   color: hsl(303deg, 10%, 53%);
 }
 
@@ -139,31 +139,30 @@ body {
   display: flex;
   align-items: center;
   border-radius: 0.5rem;
-  padding: 1rem;
-  width: 75%;
+  margin-top: 1.5rem;
+  padding: 1.1rem;
+  width: 78%;
   background-color: hsl(300deg, 24%, 96%);
-  margin-top: 1rem;
 }
 
 .rating-stars {
-  margin-left: 1rem;
+  margin-left: 0.8rem;
 }
 
 .rating-stars-icon {
   margin-left: 0.3rem;
-  width: 1.2rem;
 }
 
 .rating-text {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 700;
-  margin-left: 1.8rem;
+  margin-left: 2rem;
   color: hsl(300deg, 43%, 22%);
 }
 
 .main {
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
   width: 100%;
   align-items: center;
   margin: 2.5rem 0;
@@ -178,9 +177,10 @@ body {
 .article {
   background-color: hsl(300deg, 43%, 22%);
   color: white;
-  font-size: 1.2rem;
-  padding: 2.5rem;
+  font-size: 1rem;
+  padding: 2.5rem 0 2.5rem 2rem;
   border-radius: 0.8rem;
+  width: 100%;
 }
 
 .article-top {
@@ -204,12 +204,13 @@ body {
 
 .article-img {
   border-radius: 50%;
-  width: 3rem;
+  width: 2.5rem;
 }
 
 .article-description {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   line-height: 1.5rem;
+  width: 85%;
 }
 
 @media screen and (max-width: 1350px) {
@@ -234,7 +235,21 @@ body {
 }
 @media screen and (max-width: 1150px) {
   .container {
-    width: 85%;
+    width: 70%;
+  }
+  .header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .header-left-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .header-right-panel {
+    align-items: center;
   }
   .header-right-panel-rating {
     display: flex;
@@ -245,23 +260,6 @@ body {
   }
   .rating-text {
     margin: 0.5rem 0 0 0;
-  }
-}
-@media screen and (max-width: 1150px) {
-  .header {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  .header-right-panel-rating {
-    display: flex;
-    flex-direction: column;
-  }
-  .header-left-panel {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
   }
   .header-left-panel,
 .header-right-panel {
@@ -275,5 +273,14 @@ body {
   }
   .main .thrid {
     margin-top: 2.5rem;
+  }
+}
+@media screen and (max-width: 470px) {
+  .container {
+    width: 90%;
+  }
+  .header-left-panel-title {
+    max-width: 100%;
+    font-size: 3rem;
   }
 }/*# sourceMappingURL=style.css.map */
